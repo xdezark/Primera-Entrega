@@ -71,3 +71,12 @@ const carritowCargado = cargarPrenda(carritow,colorFiltrado);
 console.log(carritowCargado);
 
 alert("Gracias por tu compra, el importe a pagare es: " + "$" + carritow[0].precio );
+
+let cobrar = prompt("Con cuanto pagas?");
+ if(cobrar<carritow[0].precio){
+    alert("El monto ingresado es insuficiente")
+ }else if (cobrar>carritow[0].precio){
+    alert("Gracias, tu vuelto es " + (cobrar - carritow[0].precio ))
+ }else {
+    alert("Gracias por tu compra")
+ };
