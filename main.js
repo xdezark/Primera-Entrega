@@ -69,3 +69,5 @@ const carritow = [];
 const carritowCargado = cargarPrenda(carritow,colorFiltrado);
 
 console.log(carritowCargado);
+
+alert("Gracias por tu compra, el importe a pagare es: " + "$" + carritow[0].precio );
